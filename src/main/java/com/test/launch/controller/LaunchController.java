@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class LaunchController {
 	
 	
-
+//test app
 	@GetMapping("/welcome")
 	public ResponseEntity<String> greeting(@RequestParam(value = "name", defaultValue = "World") String name) {
 		
@@ -18,7 +18,7 @@ public class LaunchController {
 	return new ResponseEntity<String>(temp,HttpStatus.OK);
 	}
 
-	
+	//test home
 	@GetMapping("/")
 	public ResponseEntity<String> getVersion() {
 		
